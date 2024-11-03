@@ -387,7 +387,7 @@ footer {
 }
 
 .copy p a {
-    color: var(--icon-color);
+    color: red;
     margin-left: 5px;
 }
 
