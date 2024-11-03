@@ -1,0 +1,394 @@
+/* Google Font Lato and quicksand css link */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Google Font Lato and quicksand css link */
+
+/* Root color and font family */
+:root {
+    --primary-font: "Roboto Condensed", sans-serif;
+    --secondary-font: "Roboto Slab", serif;
+    --third-font: "Roboto", sans-serif;
+    --primary-color: #4e4e4e;
+    --secondary-color: #a1a1a1;
+    --third-color: #6c6c6c;
+    --fourth-color: #cacaca;
+    --icon-color: #706551;
+    --border-color: #dcdcdc;
+    --active-color: #56c4ab;
+}
+
+/* Root color and font family */
+/* basic css desing file */
+/* Target all browsers */
+input[type=number] {
+    -moz-appearance: textfield;
+    /* For Firefox */
+    -webkit-appearance: none;
+    /* For Chrome, Safari, Edge */
+    appearance: none;
+    /* For modern browsers */
+}
+
+/* Optional: Hide the up/down arrows in WebKit-based browsers (like Chrome) */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type=search]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+/* check box color change  */
+input[type="checkbox"]:checked {
+    accent-color: var(--logo-color);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+}
+
+body,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p,
+span,
+table,
+footer,
+nav,
+div,
+section {
+    padding: 0;
+    margin: 0;
+}
+
+.active {
+    color: var(--active-color) !important;
+}
+
+/* basic css style desing ended */
+
+/* nav bar css part start  */
+
+.navbar {
+    padding: 20px 0px;
+}
+
+.navbar .navbar-brand {
+    font-family: var(--primary-font);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 65px;
+    color: var(--primary-color);
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-left: 25px !important;
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 35px;
+    color: var(--primary-color);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+@media screen and (max-width:576px) {
+    .navbar {
+        padding: 15px 0px;
+    }
+}
+
+/* nav bar css part End */
+/* banner section css part start  */
+.hero_section {
+    width: 100%;
+    padding: 200px 0px;
+    background: url(../image/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+
+}
+
+.banner_title {
+    font-family: var(--secondary-font);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 35px;
+    color: #fff;
+}
+
+.banner_sub {
+    font-family: var(--secondary-font);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35px;
+    color: #a8a8a8;
+    margin-top: 30px;
+}
+
+.banner_btn {
+    margin: 50px auto;
+    width: 140px;
+    height: 45px;
+    background-color: #3f8dbf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+
+}
+
+.banner_btn a {
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 35px;
+    color: #fff;
+    padding: 0px 10px;
+}
+
+@media screen and (max-width:576px) {
+    .hero_section {
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .banner_title {
+        font-family: var(--secondary-font);
+        font-size: 25px;
+    }
+
+    .banner_sub {
+        font-family: var(--secondary-font);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 35px;
+        color: #a8a8a8;
+        margin-top: 10px;
+    }
+
+    .banner_btn {
+        margin: 30px auto;
+
+
+    }
+}
+
+/* banner section css part End */
+/* banner bottom section css part start     */
+
+.banner_bottom {
+    border-bottom: 2px solid #dcdcdc;
+}
+
+.b_b_title {
+
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 60px;
+    color: var(--primary-color);
+
+
+}
+
+.b_b_txt {
+    font-family: var(--third-font);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #616161;
+    padding: 0px 20px;
+}
+
+
+@media screen and (max-width:576px) {
+    .b_b_txt {
+
+        padding: 0px 0px;
+    }
+}
+
+/* banner bottom section css part end  */
+/* work section css part started */
+.work {
+    margin-bottom: 30px;
+}
+
+.w_p_title {
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 60px;
+    color: var(--primary-color);
+    margin-top: 15px;
+}
+
+.w_c_title {
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--primary-color);
+    margin-top: 10px;
+}
+
+.w_c_sub {
+    font-family: var(--secondary-font);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #a8a8a8;
+}
+
+.w_c_txt {
+    font-family: var(--third-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #5c5c5c;
+    margin-top: 12px;
+}
+
+/* work section css part Ended */
+/* qutation section css part start   */
+.qutation_main {
+    background-color: #efefef;
+    padding: 60px 0px;
+}
+
+.q_content {
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #a1a1a1;
+    padding: 0px 230px;
+
+}
+
+@media screen and (max-width:576px) {
+    .q_content {
+
+        padding: 0px 0px;
+
+    }
+}
+
+/* qutation section css part End */
+/* footer section css part start  */
+footer {
+    background-color: #1c1c1c;
+    padding: 50px 0px;
+}
+
+.f_title{
+    font-family: var(--primary-font);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #6c6c6c;
+    margin-bottom: 24px;
+
+}
+.f_txt{
+    font-family: var(--third-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #cacaca;
+
+}
+.f_txt span{
+    font-size: 12px;
+}
+
+.f_icon i{
+    font-size: 14px;
+    color: var(--icon-color);
+    text-align: right;
+}
+
+
+@media screen and (max-width:576px) {
+    footer {
+        padding: 20px 0px;
+    }
+}
+/* footer section css part End */
+
+/* copy section css part start  */
+
+.copy{
+    background-color: #9E9BBF;
+    padding: 15px 0px;
+    text-align: center;
+}
+.copy p,
+.copy p a {
+    font-size: var(--primary-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #000;
+}
+
+.copy p a {
+    color: var(--icon-color);
+    margin-left: 5px;
+}
+
+/* copy section css part End */
